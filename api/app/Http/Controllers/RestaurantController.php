@@ -75,6 +75,7 @@ class RestaurantController extends Controller
     public function show_image($filename)
     {
         $path = 'storage/'.$filename;
+        // dd($path);
         return response()->file($path);
     }
 }
